@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Converter Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-mark">CC</div>
+          <div>
+            <p>Code Converter Studio</p>
+            <span>Run workspace</span>
+          </div>
+        </div>
+
+        <div class="status-pill">
+          <span class="pulse"></span>
+          <span id="engineStatus">Ready</span>
+        </div>
+      </header>
+
+      <main class="workspace" id="workspace">
+        <section class="editor-pane">
+          <div class="pane-header editor-hero">
+            <div class="hero-copy">
+              <p class="eyebrow">Smart editor</p>
+              <h1>Code. Run. Share.</h1>
+              <div class="hero-chips" aria-label="Supported tools">
+                <span>Auto detect</span>
+                <span>Live run</span>
+                <span>PDF</span>
+                <span>XLS</span>
+                <span>WhatsApp</span>
+              </div>
+            </div>
+            <div class="hero-actions">
+              <button class="ghost-btn" id="sampleBtn" type="button">Load sample</button>
+              <div class="hero-meter">
+                <span>Formats</span>
+                <strong>5</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="toolbar">
+            <div class="detector">
+              <span>Detected</span>
+              <strong id="detectedLanguage">HTML</strong>
+            </div>
+
+            <label class="select-label" for="languageSelect">
+              <span>Run as</span>
+              <select id="languageSelect">
+                <option value="auto">Auto detect</option>
+                <option value="html">HTML / CSS / JS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="cpp">C++</option>
+                <option value="c">C</option>
+                <option value="text">Plain text</option>
+              </select>
+            </label>
+
+            <button class="primary-btn" id="runBtn" type="button">
+              <span class="play-icon"></span>
+              Run
+            </button>
+          </div>
+
+          <div class="editor-wrap">
+            <div class="line-gutter" id="lineGutter" aria-hidden="true">1</div>
+            <textarea id="codeInput" spellcheck="false" aria-label="Code editor"></textarea>
+          </div>
+        </section>
+
+        <div class="splitter" id="splitter" role="separator" aria-label="Resize editor and output panes" aria-orientation="vertical" tabindex="0"></div>
+
+        <section class="preview-pane">
+          <div class="pane-header compact">
+            <div>
+              <p class="eyebrow">Live result</p>
+              <h2>Output preview</h2>
+            </div>
+            <div class="action-cluster">
+              <div class="export-group">
+                <button class="export-btn" data-export="pdf" type="button">PDF</button>
+                <button class="export-btn" data-export="doc" type="button">DOC</button>
+                <button class="export-btn" data-export="xls" type="button">XLS</button>
+                <button class="export-btn" data-export="csv" type="button">CSV</button>
+                <button class="export-btn" data-export="txt" type="button">TXT</button>
+              </div>
+              <button class="share-toggle" id="sharePanelToggle" type="button">Share</button>
+            </div>
+          </div>
+
+          <div class="share-panel" id="sharePanel" hidden>
+            <label for="shareContent">
+              <span>Send</span>
+              <select id="shareContent">
+                <option value="all">All</option>
+                <option value="preview">Preview only</option>
+                <option value="output">Output only</option>
+                <option value="code">Code only</option>
+                <option value="report">Output + code</option>
+              </select>
+            </label>
+            <label for="shareFormat">
+              <span>Format</span>
+              <select id="shareFormat">
+                <option value="pdf">PDF</option>
+                <option value="doc">DOC</option>
+                <option value="xls">XLS</option>
+                <option value="csv">CSV</option>
+                <option value="txt">TXT</option>
+              </select>
+            </label>
+            <button class="share-action" id="systemShareBtn" type="button">Share file</button>
+            <button class="share-action whatsapp" id="whatsappShareBtn" type="button">WhatsApp</button>
+          </div>
+
+          <div class="result-tabs" role="tablist" aria-label="Output views">
+            <button class="tab active" data-tab="preview" type="button">Preview</button>
+            <button class="tab" data-tab="console" type="button">Console</button>
+            <button class="tab" data-tab="report" type="button">Report</button>
+          </div>
+
+          <div class="output-surface">
+            <iframe id="htmlPreview" title="HTML output preview"></iframe>
+            <pre id="consoleOutput" hidden></pre>
+            <div id="reportOutput" hidden></div>
+          </div>
+        </section>
+      </main>
+
+      <section class="feature-strip" aria-label="Website features">
+        <article>
+          <strong>Languages</strong>
+          <span>HTML, JavaScript, Python, Java, C, C++</span>
+        </article>
+        <article>
+          <strong>Exports</strong>
+          <span>PDF, DOC, XLS, CSV, TXT</span>
+        </article>
+        <article>
+          <strong>Mode</strong>
+          <span>Auto detect</span>
+        </article>
+      </section>
+    </div>
+
+    <template id="reportTemplate">
+      <div class="report-document">
+        <div class="report-hero">
+          <span>Generated Output</span>
+          <h2>Code Run Report</h2>
+          <p id="reportSummary"></p>
+        </div>
+        <div class="report-grid">
+          <div>
+            <span>Language</span>
+            <strong id="reportLanguage"></strong>
+          </div>
+          <div>
+            <span>Lines</span>
+            <strong id="reportLines"></strong>
+          </div>
+          <div>
+            <span>Generated</span>
+            <strong id="reportDate"></strong>
+          </div>
+        </div>
+        <h3>Output</h3>
+        <div id="reportRenderedOutput"></div>
+        <h3>Source Code</h3>
+        <pre id="reportSourceCode"></pre>
+      </div>
+    </template>
+
+    <script src="script.js"></script>
+    <script src="preview-hotfix.js"></script>
+  </body>
+</html>

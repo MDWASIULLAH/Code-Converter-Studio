@@ -1,0 +1,63 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Code Converter Studio preview</title>
+  <desc id="desc">A polished split-screen code editor with export and share controls.</desc>
+  <rect width="1200" height="675" fill="#F5F7F2"/>
+  <rect x="54" y="48" width="1092" height="579" rx="28" fill="#FFFFFF" stroke="#D9DED6"/>
+  <rect x="54" y="48" width="1092" height="82" rx="28" fill="#FFFFFF"/>
+  <rect x="82" y="72" width="48" height="48" rx="14" fill="url(#logo)"/>
+  <text x="102" y="104" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800">CC</text>
+  <text x="150" y="93" fill="#15171D" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="800">Code Converter Studio</text>
+  <text x="150" y="116" fill="#667085" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600">Auto detect, run, export, and share</text>
+  <rect x="54" y="130" width="538" height="497" fill="#111417"/>
+  <rect x="592" y="130" width="14" height="497" fill="#14766F"/>
+  <rect x="606" y="130" width="540" height="497" fill="#FBFCF9"/>
+  <text x="92" y="184" fill="#D8AA3F" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800" letter-spacing="4">SMART EDITOR</text>
+  <text x="92" y="250" fill="#F3F7F4" font-family="Inter, Arial, sans-serif" font-size="62" font-weight="800">Code. Run.</text>
+  <text x="92" y="318" fill="#F3F7F4" font-family="Inter, Arial, sans-serif" font-size="62" font-weight="800">Share.</text>
+  <rect x="92" y="352" width="112" height="38" rx="19" fill="#1A1F22" stroke="#3A4443"/>
+  <text x="148" y="376" text-anchor="middle" fill="#D9E2DE" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="800">Auto</text>
+  <rect x="216" y="352" width="128" height="38" rx="19" fill="#1A1F22" stroke="#3A4443"/>
+  <text x="280" y="376" text-anchor="middle" fill="#D9E2DE" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="800">Live run</text>
+  <rect x="356" y="352" width="78" height="38" rx="19" fill="#1A1F22" stroke="#3A4443"/>
+  <text x="395" y="376" text-anchor="middle" fill="#D9E2DE" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="800">PDF</text>
+  <rect x="82" y="428" width="214" height="72" rx="16" fill="#1A1F22" stroke="#3A4443"/>
+  <text x="108" y="457" fill="#A8B5B0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" letter-spacing="2">DETECTED</text>
+  <text x="108" y="482" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="800">HTML / CSS / JS</text>
+  <rect x="314" y="428" width="196" height="72" rx="16" fill="#DF6546"/>
+  <text x="412" y="473" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="800">Run</text>
+  <text x="650" y="184" fill="#D8AA3F" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800" letter-spacing="4">LIVE RESULT</text>
+  <text x="650" y="223" fill="#15171D" font-family="Inter, Arial, sans-serif" font-size="35" font-weight="800">Output preview</text>
+  <rect x="840" y="166" width="78" height="52" rx="14" fill="#14766F"/>
+  <text x="879" y="199" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">PDF</text>
+  <rect x="930" y="166" width="78" height="52" rx="14" fill="#FFFFFF" stroke="#D9DED6"/>
+  <text x="969" y="199" text-anchor="middle" fill="#15171D" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">DOC</text>
+  <rect x="1020" y="166" width="78" height="52" rx="14" fill="#FFFFFF" stroke="#D9DED6"/>
+  <text x="1059" y="199" text-anchor="middle" fill="#15171D" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">TXT</text>
+  <rect x="650" y="248" width="448" height="92" rx="18" fill="#EEF5F1" stroke="#D9DED6"/>
+  <rect x="672" y="266" width="132" height="56" rx="13" fill="#FFFFFF" stroke="#D9DED6"/>
+  <text x="694" y="289" fill="#667085" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="800" letter-spacing="2">SEND</text>
+  <text x="694" y="311" fill="#15171D" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">Preview</text>
+  <rect x="824" y="266" width="118" height="56" rx="13" fill="#FFFFFF" stroke="#D9DED6"/>
+  <text x="846" y="289" fill="#667085" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="800" letter-spacing="2">FORMAT</text>
+  <text x="846" y="311" fill="#15171D" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">PDF</text>
+  <rect x="958" y="266" width="118" height="56" rx="13" fill="#15171D"/>
+  <text x="1017" y="302" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">Share</text>
+  <rect x="650" y="374" width="448" height="174" rx="20" fill="#FFFFFF" stroke="#D9DED6"/>
+  <rect x="680" y="402" width="388" height="62" rx="16" fill="url(#hero)"/>
+  <text x="704" y="441" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Project Output</text>
+  <rect x="680" y="492" width="110" height="26" rx="13" fill="#EDF7F4"/>
+  <rect x="810" y="492" width="110" height="26" rx="13" fill="#EDF7F4"/>
+  <rect x="940" y="492" width="110" height="26" rx="13" fill="#EDF7F4"/>
+  <defs>
+    <linearGradient id="logo" x1="82" y1="72" x2="130" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#315F9D"/>
+      <stop offset="0.45" stop-color="#14766F"/>
+      <stop offset="1" stop-color="#DF6546"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="680" y1="402" x2="1068" y2="464" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#14766F"/>
+      <stop offset="0.55" stop-color="#315F9D"/>
+      <stop offset="1" stop-color="#DF6546"/>
+    </linearGradient>
+  </defs>
+</svg>
